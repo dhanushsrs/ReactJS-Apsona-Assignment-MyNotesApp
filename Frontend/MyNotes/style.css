@@ -1,0 +1,259 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif, "Roboto";
+}
+
+.app-container {
+  background-color: orange;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+
+nav {
+  width: 100%;
+  height: 74px;
+  background-color: #53698f;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.menu {
+  width: 65%;
+  display: flex;
+  justify-content: end;
+  list-style-type: none;
+}
+
+.menu li {
+  margin-right: 20px;
+  font-size: 19px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/*.menu li a {
+  font-size: 19px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}*/
+
+/*.menu li a:hover {
+  color: #ccc;
+}*/
+
+.search-container {
+  position: relative;
+  display: inline-block;
+  width: 300px; /* Adjust as needed */
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* Adjust padding to accommodate icon */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px; /* Adjust to position the icon */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.knob {
+  display: flex;
+}
+
+.theme-btn {
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-size: 19px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.logout-btn {
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-size: 19px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.logout-btn:hover {
+  background-color: red;
+}
+
+/* MyNotes */
+.container {
+  padding: 44px;
+}
+
+#addNote {
+  width: 200px;
+  height: 180px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.tags {
+  font-style: "Roboto";
+  font-weight: bold;
+}
+.my-note {
+  min-width: 200px;
+  height: 140px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 11px;
+  border: none;
+}
+
+.my-note p {
+  margin-top: 11px;
+}
+
+.note {
+  display: flex;
+  gap: 33px;
+}
+
+.new-notes {
+  display: flex;
+  gap: 33px;
+  flex-wrap: wrap;
+}
+
+.my-note button {
+  margin-top: 11px;
+  width: 80px;
+  height: 27px;
+  background-color: orange;
+  color: #ffffff;
+  font-size: 18px;
+  top: 210px;
+  border: none;
+  cursor: pointer;
+}
+
+.save-edit-btn {
+  margin-top: 11px;
+  width: 80px;
+  height: 27px;
+  background-color: green;
+  color: #ffffff;
+  font-size: 18px;
+  top: 210px;
+  border: none;
+  cursor: pointer;
+}
+.add-form {
+  display: none;
+  width: 300px;
+  padding: 21px;
+  border-radius: 3px;
+  background-color: white;
+  position: fixed;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 40%);
+  top: 5%;
+}
+
+.add-form input {
+  width: 93%;
+  height: 16px;
+  padding: 11px;
+  border: 1px solid black;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.inputs {
+  margin-top: 22px;
+}
+
+textarea {
+  width: 93%;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.inputs p {
+  font-size: 20px;
+}
+
+#addBtn {
+  width: 100%;
+  height: 36px;
+  background-color: rgb(225, 111, 0);
+  color: #ffffff;
+  font-size: 24px;
+  margin-top: 22px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head button {
+  border: none;
+  background-color: transparent;
+  font-size: 33px;
+  cursor: pointer;
+}
+
+.note-color-1 {
+  background-color: #ffd966; /* Light yellow */
+}
+
+.note-color-2 {
+  background-color: #a5d8ff; /* Light blue */
+}
+
+.note-color-3 {
+  background-color: #c9eb8b; /* Light green */
+}
+
+.note-color-4 {
+  background-color: #f4cccc; /* Light red */
+}
+
+.note-color-5 {
+  background-color: #d9d9d9; /* Light gray */
+}
